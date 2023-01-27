@@ -26,8 +26,8 @@ public class ProdutoControle {
 		return "API Funcionando";
 	}
 	
-	@PostMapping("/cadastrar")
+	@PostMapping("/cadastrarAlterar")
 	public ResponseEntity<?> cadastrar(@RequestBody ProdutoModelo pm){
-		return ps.cadastrar(pm);
+		return ps.cadastrarAlterar(pm, "cadastrar");
 	}
 }
